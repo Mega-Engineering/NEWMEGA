@@ -208,7 +208,7 @@ ol.steps li.mx-in::before{animation:mxPop .6s cubic-bezier(.2,.9,.3,1.4)}
 /* =====================================================================
    Homepage video hero
    ===================================================================== */
-.mx-hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#0c1720 url('/NEWMEGA/assets/hero-poster-2026.jpg') center/cover}
+.mx-hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#0c1720 url('/NEWMEGA/assets/hero-poster-hd.jpg') center/cover}
 .mx-hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;max-width:none}
 .mx-hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,12,18,.55) 0%,rgba(6,12,18,.15) 30%,rgba(6,12,18,.35) 60%,rgba(6,12,18,.82) 100%),linear-gradient(90deg,rgba(6,12,18,.55) 0%,rgba(6,12,18,0) 65%)}
 .mx-hero-inner{position:relative;z-index:1;width:100%;max-width:1240px;margin:0 auto;padding:140px 20px 34px}
@@ -875,4 +875,4 @@ html[dir="rtl"] .fe-node:not(.fe-end)::before{right:auto;left:-27px;border-left:
 html[dir="rtl"] .fe-tech-card h3,html[dir="rtl"] .fe-node small{direction:ltr;unicode-bidi:isolate}
 html[dir="rtl"] .fe-tech-card h3{text-align:right}
 
-@media (max-width:700px){.mx-hero{background-image:url('/NEWMEGA/assets/hero-poster-2026-m.jpg')}}
+@media (max-width:700px){.mx-hero{background-image:url('/NEWMEGA/assets/hero-poster-hd-m.jpg')}}

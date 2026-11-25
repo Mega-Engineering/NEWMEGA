@@ -30,7 +30,8 @@ def main():
             continue
         t = src.read_text(encoding='utf-8')
         t = t.replace('https://mega-engineering.github.io/NEWMEGA/', SITE).replace('/NEWMEGA/', '/')
-        if src.suffix == '.html' and rel.parts[0] not in KEEP_NOINDEX:
+        if src.suffix == '.html' and rel.parts[0] not in KEEP_NOINDEX and 'class="mx-langnote"' not in t:
+            # language copies whose text is still English keep noindex (no duplicate content)
             t = re.sub(r'<meta[^>]*name="robots"[^>]*>\s*|<meta[^>]*content="noindex[^"]*"[^>]*name="robots"[^>]*>\s*', '', t)
         dst.write_text(t, encoding='utf-8')
     sm = (ROOT / 'sitemap-production.xml').read_text(encoding='utf-8')

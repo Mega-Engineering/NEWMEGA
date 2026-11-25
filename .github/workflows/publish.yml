@@ -27,7 +27,9 @@ jobs:
         run: python scripts/build_blog.py
       - name: Title Case for headings and buttons
         run: python scripts/titlecase.py
-      - name: Build language versions (ES, FR, PT, RU)
+      - name: SEO, local search and AI search data
+        run: python scripts/seo.py
+      - name: Build language versions (ES, FR, PT, RU, AR)
         run: python scripts/build_i18n.py
       - name: Fresh design-file links (no old cached styles)
         run: python scripts/cachebust.py

@@ -876,3 +876,15 @@ html[dir="rtl"] .fe-tech-card h3,html[dir="rtl"] .fe-node small{direction:ltr;un
 html[dir="rtl"] .fe-tech-card h3{text-align:right}
 
 @media (max-width:700px){.mx-hero{background-image:url('/NEWMEGA/assets/hero-poster-hd-m.jpg')}}
+/* article cover images that carry text: show the whole picture */
+body .hero-art.mx-poster[style*="--hero-img"]{background-size:contain!important;background-color:#fff!important;aspect-ratio:16/9;height:auto!important}
+.vd-seo{padding:56px 0;background:#f5f8fb}
+.vd-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
+.vd-grid>div,.vd-why{background:#fff;border:1px solid #dfe8f0;border-radius:16px;padding:22px}
+.vd-grid h3,.vd-why h3{margin:0 0 8px;font:700 1.12rem Barlow,"Source Sans 3",sans-serif;color:#17304b}
+.vd-grid p,.vd-grid li,.vd-why p{color:#4a5d70;line-height:1.7}
+.vd-grid ul{margin:0;padding-left:1.2em}
+.vd-why{margin-top:18px;border-left:4px solid #90A840}
+html[dir="rtl"] .vd-why{border-left:1px solid #dfe8f0;border-right:4px solid #90A840}
+html[dir="rtl"] .vd-grid ul{padding-left:0;padding-right:1.2em}
+@media (max-width:760px){.vd-grid{grid-template-columns:minmax(0,1fr)}}

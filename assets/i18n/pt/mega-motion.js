@@ -202,7 +202,7 @@
     fit(); addEventListener('resize', fit);
   }
   /* WhatsApp chat button (number in one place) */
-  var WA_NUMBER = '917276011520';
+  var WA_NUMBER = '918380006704';
   if (!document.querySelector('.mx-wa')) {
     var wa = document.createElement('a'); wa.className = 'mx-wa';
     wa.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent('Olá, MEGA Engineering. Gostaria de conversar sobre meu projeto com sua equipe.');

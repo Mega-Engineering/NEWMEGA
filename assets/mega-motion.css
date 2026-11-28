@@ -975,3 +975,13 @@ html[dir="rtl"] .br-eq li:hover{transform:translateX(-4px)}
 html[dir="rtl"] .ev-bar i::after{inset:0 0 0 auto;transform-origin:right}
 html[dir="rtl"] .cr-dept::before{transform-origin:right}
 .fe-cta a:not(.mx-btn){color:#cfe3a0!important;text-decoration:underline}
+
+/* round 24: full-image heroes for Evaporation and ZLD */
+.hero-inner.ev-hero{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:40px}
+.ev-hero-photo{margin:0;border-radius:16px;overflow:hidden;background:#e9eff5;box-shadow:0 26px 54px -26px rgba(19,51,79,.5);animation:evRise .9s .15s cubic-bezier(.2,.8,.2,1) both}
+@keyframes evRise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.ev-hero-photo img{display:block;width:100%;height:auto}
+.br-photo-tall{margin:0;justify-self:center;border-radius:18px;overflow:hidden;background:#e9eff5;box-shadow:0 22px 50px -30px rgba(19,51,79,.6);max-width:440px}
+.br-photo-tall img{display:block;width:100%;height:auto}
+@media (max-width:850px){.hero-inner.ev-hero{grid-template-columns:minmax(0,1fr);gap:26px}.br-photo-tall{max-width:360px}}
+@media (prefers-reduced-motion:reduce){.ev-hero-photo{animation:none}}

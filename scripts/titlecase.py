@@ -22,6 +22,8 @@ def _cap_part(p):
 def _fix_word(w, first, last):
     if any(ch.isdigit() for ch in w) or '/' in w or '@' in w:
         return w
+    if len(w) == 1 and w.isupper() and not first:   # initials such as S.A.
+        return w
     if any(ch.isupper() for ch in w[1:]):          # MEGA, BioCNG, pH, CO₂ ...
         return w
     low = w.lower()
